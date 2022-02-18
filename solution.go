@@ -17,10 +17,10 @@ func CalcSquare(sideLen float64, sidesNum sidesNum) float64 {
 	fls := float64(sidesNum)
 	switch sidesNum {
 	case 0:
-		square := math.Pi * sideLen
+		square := math.Pi * math.Pow(sideLen, 2)
 		return square
 	case 4:
-		square := fls * sideLen
+		square := math.Pow(fls, 2)
 		return square
 	case 3:
 		square := math.Sqrt(fls) / 4 * math.Pow(sideLen, 2)
